@@ -7,10 +7,10 @@ import pytesseract
 import os
 from typing import List, Dict
 
-from services.chunk import chunk_document
-from services.embeddings import get_embedding
-from services.vectorstore import upsert_embeddings
-from services.rag_graph import rag_graph
+from .services.chunk import chunk_document
+from .services.embeddings import get_embedding
+from .services.vectorstore import upsert_embeddings
+from .services.rag_graph import rag_graph
 
 app = FastAPI()
 
